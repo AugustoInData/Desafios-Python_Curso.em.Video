@@ -8,7 +8,7 @@ tempo_pagamento = float(input('Em quantos anos você pretende pagar?\n'))
 
 prestacao = valor_casa / (tempo_pagamento * 12)
 
-if prestacao < salario * (30 / 100):
+if prestacao <= salario * (30 / 100):
     print('\033[34;45mSEU EMPRÉSTIMO FOI APROVADO!\033[m')
-elif prestacao > salario * (30 / 100):
+elif prestacao >= salario * (30 / 100):
     print('\033[35;41mSEU EMPRÉSTIMO NÃO FOI APROVADO!\033[m')
